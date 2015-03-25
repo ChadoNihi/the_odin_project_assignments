@@ -1,0 +1,22 @@
+div.wrapper {position: absolute;width: 100%;height: 100%;}
+
+div.cell {
+	display: inline-block;
+	outline: solid 1px;
+	background-color: rgb(255,255,255);
+}
+
+div.red {background-color: red;}
+
+#vert-l-btn {
+	height:95%;width:1.2em;
+	word-wrap: break-word;
+	font-size: 1em;
+	position: fixed;
+	right: -4px;
+	padding-left: 1px;
+	padding-right: 4px;
+	z-index: 1;
+}
+
+#vert-l-btn:hover {right: 0px;font-weight: bold;}

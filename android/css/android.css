@@ -1,0 +1,90 @@
+div div {
+	background-color: red;
+	position: relative;
+}
+
+#android {
+	margin: 100px auto;
+	height: 400px;
+	width: 300px;
+}
+
+#hd {
+	height: 100px;
+	width: 220px;
+	border-radius: 110px 110px 0 0;
+}
+
+.ant {
+	height: 60px; width: 8px;
+	top: -10px;
+	border-radius: 30px 30px 0 0;
+	position: absolute;
+}
+
+#hd :nth-child(1) {
+	left: 34px;
+}
+
+#hd :nth-child(2) {
+	right: 34px;
+}
+
+.eye {
+	height: 20px; width: 30px;
+	top: 38px;
+	border-radius: 30px 30px 0 0;
+	background-color: white;
+	position: absolute;
+}
+
+#hd :nth-child(3) {
+	left: 40px;
+}
+
+#hd :nth-child(4) {
+	right: 40px;
+}
+
+#bd {
+	height: 190px; width: 220px;
+	top: 8px; border-radius: 0 0 28px 28px;
+}
+
+.arm {
+	height: 118px; width: 50px;
+	top: -40px; border-radius: 28px;
+	position: absolute;
+}
+
+#bd :nth-child(1) {
+	left: -66px;
+	transform: rotate(-20deg);
+}
+
+#bd :nth-child(2) {
+	right: -66px;
+	transform: rotate(20deg);
+}
+
+.leg {
+	height: 70px; width: 50px;
+	bottom: -70px;
+	position: absolute;
+}
+
+#bd :nth-child(3) {
+	left: -24px;
+	border-radius: 0 20px 0 28px;
+	transform: rotate(20deg);
+}
+
+#bd :nth-child(4) {
+	right: -24px;
+	border-radius: 20px 0 28px 0;
+	transform: rotate(-20deg);
+}
+
+#hd:hover {
+	top: 10px;
+}
