@@ -1,4 +1,11 @@
 <h1><%= @article.title %></h1>
+<p>
+	Tags:
+	<% @article.tags.each do |t| %>
+		<%= link_to t, tag_path(t) %>
+	<% end %>
+</p>
+<p><%= image_tag @article.image.url if @article.image.exists? %></p>
 <p><%= @article.body %></p>
 <%= render partial: 'comments/form' %>
 <%= link_to "<< Back to Articles List", articles_path %>

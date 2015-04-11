@@ -6,5 +6,13 @@
     </li>
   <% end %>
 </ul>
+<br/>
+<% @tags=Tag.all %>
+<h3>All Tags (<%= @tags.length %>)</h3>
+<p id="tags">
+	<% @tags.each do |tg| %>
+		<%= link_to tg, tag_path(tg) %> <%= link_to "X", tag_path(tg), method: :delete, data: {confirm: "Really delete tag '#{tg}'?"} %> . 
+	<% end %>
+</p>
 
 <%= link_to 'Create a New Article', new_article_path, class: "new_article" %>
